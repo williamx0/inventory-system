@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+@Data
 public class Item {
     private String category;
     private String name;
@@ -12,6 +13,7 @@ public class Item {
     private Double discount;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date date;
+    @GeneratedValue
     private String id;
 
 
